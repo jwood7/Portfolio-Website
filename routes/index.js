@@ -6,7 +6,7 @@ const path = require("path");
 
 const constructorMethod = app => {
   app.use("/code", codeRoutes);
-  app.use("/games", gameRoutes);
+  app.use("/games", gamesRoutes);
   app.use("/art", artRoutes);
 
   app.use("*", (req, res) => {
